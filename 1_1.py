@@ -20,12 +20,3 @@ generator = pipeline('text-generation', model='gpt2', device=device)
 async def generate_text(input: TextInput):
     generated = generator(input.text, max_length=50, num_return_sequences=1)
     return {"input": input.text, "output": generated[0]['generated_text']}
-
-"""
-Necessário Instalar Pytorch: https://pytorch.org/get-started/locally/
-
-Executar com
-curl -X POST "http://127.0.0.1:8000/generate/" \
--H "Content-Type: application/json" \
--d '{"text": "Once upon a time"}'
-"""

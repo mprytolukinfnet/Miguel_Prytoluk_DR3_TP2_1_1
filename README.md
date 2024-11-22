@@ -8,6 +8,7 @@ Este aplicativo FastAPI utiliza o modelo GPT-2 da HuggingFace para gerar textos 
 ```bash
 pip install -r requirements.txt
 ```
+3. Instalar Pytorch: https://pytorch.org/get-started/locally/
 
 **Como Executar**: Inicie o servidor FastAPI com o comando:
 ```bash
